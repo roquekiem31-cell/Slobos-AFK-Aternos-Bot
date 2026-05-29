@@ -25,9 +25,7 @@ var chatReplies = [
 ];
 
 var randomChats = [
-  'anyone here?', 'bored lol', 'this server is cool',
-  'afk for a bit', 'back', 'lag', 'ugh',
-  'nice base', 'anyone wanna trade?', 'rip'
+  'Sara is A meanie and Kiem is an Awesome Person'
 ];
 
 function rand(min, max) {
