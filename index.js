@@ -51,6 +51,14 @@ function createBot() {
     connected = 1;
     console.log("Bot spawned and connected");
 
+    // Auto-login for servers with auth plugins
+    setTimeout(function() {
+      try {
+        bot.chat('/login chalol78');
+        console.log("Sent login command");
+      } catch(e) {}
+    }, 1500);
+
     // Reply to chat messages
     bot.on('chat', function(user, message) {
       if (user === username) return;
