@@ -131,10 +131,10 @@ function createBot() {
   });
 
   bot.on('end', function() {
-    console.log("Bot disconnected, reconnecting in 30 seconds...");
+    console.log("Bot disconnected, reconnecting in 60 seconds...");
     connected = 0;
     lasttime = -1;
-    setTimeout(createBot, 30000);
+    setTimeout(createBot, 60000);
   });
 }
 
